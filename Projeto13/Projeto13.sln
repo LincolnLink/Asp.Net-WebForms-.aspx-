@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Modelagem de Entidades", "0 - Modelagem de Entidades", "{B20647DB-DBCB-4C16-B761-4DCE38C53856}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Sistema", "1 - Sistema", "{ED01CA50-715F-4A62-9BC2-6AF4FFFD28D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Camada de Apresentação", "1.1 - Camada de Apresentação", "{A767D1D7-FFEF-4E11-9641-EC6F29737DD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 - Camada de Regras de Negócio", "1.2 - Camada de Regras de Negócio", "{7DC81E6E-A67E-4CAC-BE38-708A5FCEA94D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 - Camada de Acesso a Dados", "1.3 - Camada de Acesso a Dados", "{52700956-8A68-4732-963A-27728D54413D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Entidades", "Projeto.Entidades\Projeto.Entidades.csproj", "{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A767D1D7-FFEF-4E11-9641-EC6F29737DD2} = {ED01CA50-715F-4A62-9BC2-6AF4FFFD28D4}
+		{7DC81E6E-A67E-4CAC-BE38-708A5FCEA94D} = {ED01CA50-715F-4A62-9BC2-6AF4FFFD28D4}
+		{52700956-8A68-4732-963A-27728D54413D} = {ED01CA50-715F-4A62-9BC2-6AF4FFFD28D4}
+		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4} = {B20647DB-DBCB-4C16-B761-4DCE38C53856}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60DA0467-4EC2-4B8C-ADE4-E750DE5D06A5}
+	EndGlobalSection
+EndGlobal
