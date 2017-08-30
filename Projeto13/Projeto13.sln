@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 - Camada de Acesso a Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Entidades", "Projeto.Entidades\Projeto.Entidades.csproj", "{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proejto.WEB", "Proejto.WEB\Proejto.WEB.csproj", "{784B8C3B-8D45-42D0-A881-3B0CDC4CF6BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784B8C3B-8D45-42D0-A881-3B0CDC4CF6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784B8C3B-8D45-42D0-A881-3B0CDC4CF6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784B8C3B-8D45-42D0-A881-3B0CDC4CF6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784B8C3B-8D45-42D0-A881-3B0CDC4CF6BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 		{7DC81E6E-A67E-4CAC-BE38-708A5FCEA94D} = {ED01CA50-715F-4A62-9BC2-6AF4FFFD28D4}
 		{52700956-8A68-4732-963A-27728D54413D} = {ED01CA50-715F-4A62-9BC2-6AF4FFFD28D4}
 		{B45C4E2F-5694-44D4-8F21-E97D0E0A82C4} = {B20647DB-DBCB-4C16-B761-4DCE38C53856}
+		{784B8C3B-8D45-42D0-A881-3B0CDC4CF6BB} = {A767D1D7-FFEF-4E11-9641-EC6F29737DD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60DA0467-4EC2-4B8C-ADE4-E750DE5D06A5}

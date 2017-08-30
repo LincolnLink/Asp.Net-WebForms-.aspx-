@@ -1,0 +1,9 @@
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\bin\Proejto.WEB.dll.config
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\bin\Proejto.WEB.dll
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\bin\Proejto.WEB.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\obj\Debug\Proejto.WEB.csprojResolveAssemblyReference.cache
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\obj\Debug\Proejto.WEB.csproj.CoreCompileInputs.cache
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\obj\Debug\Proejto.WEB.dll
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\obj\Debug\Proejto.WEB.pdb
