@@ -5,16 +5,24 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Sistema de Login</title>
+    <!--Css-->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <!--Js-->
+    <script src="../../Scripts/jquery-3.1.1.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <!--
     <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>-->
 </head>
-<body>
+<body class="container">
     <form id="form1" runat="server">
         <div>
             <div class="well well-sm">
             <h2>Sistema de Agenda</h2>
-            </div>            <div class="row">
+            </div>
+            <div class="row">
                 <div class="col-md-3">
                     <strong>Usuario Altenticado</strong>
                 </div>

@@ -66,10 +66,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Banco.mdf" />
+    <Content Include="App_Data\Banco_log.ldf">
+      <DependentUpon>Banco.mdf</DependentUpon>
+    </Content>
     <Content Include="AreaRestrita\CadastroTarefa.aspx" />
     <Content Include="AreaRestrita\ConsultaTarefa.aspx" />
     <Content Include="AreaRestrita\Home.aspx" />
     <Content Include="AreaRestrita\Templates\Layout.Master" />
+    <Content Include="AreaRestrita\Web.config" />
     <None Include="packages.config" />
     <Content Include="Default.aspx" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
@@ -147,8 +152,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proejto.Util\Projeto.Util.csproj">
+      <Project>{0a8d0e36-882e-4f84-a182-9ec774fe711d}</Project>
+      <Name>Projeto.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Projeto.BLL\Projeto.BLL.csproj">
+      <Project>{cded3674-cb2c-4676-9899-e0fe804f5d61}</Project>
+      <Name>Projeto.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Projeto.DAL\Projeto.DAL.csproj">
+      <Project>{09c32be3-9865-488e-a07b-ce3ad4b98414}</Project>
+      <Name>Projeto.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Projeto.Entidades\Projeto.Entidades.csproj">
+      <Project>{b45c4e2f-5694-44d4-8f21-e97d0e0a82c4}</Project>
+      <Name>Projeto.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

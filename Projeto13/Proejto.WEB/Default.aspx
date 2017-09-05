@@ -43,6 +43,8 @@
                     <a href="#" data-target="#janela" data-toggle="modal">
                         Cadastre-se aqui
                     </a>
+                     <br />
+                        <asp:label runat="server" id="lblMessagem" />
                 </div>
             </div>
         
@@ -85,7 +87,11 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <asp:Button ID="BtnCadastro" runat="server" Text="Criar Conta de Usuário" CssClass="btn btn-success" />
+                        <asp:Button ID="BtnCadastro" runat="server"
+                            Text="Criar Conta de Usuário" 
+                            CssClass="btn btn-success"
+                            OnClick="BtnCadastro_Click"/>
+                   
                     </div>
                 </div>
             </div>

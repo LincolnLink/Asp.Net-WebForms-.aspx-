@@ -1,0 +1,6 @@
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\bin\Debug\Proejto.Util.dll
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\bin\Debug\Proejto.Util.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Proejto.Util.csprojResolveAssemblyReference.cache
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Proejto.Util.csproj.CoreCompileInputs.cache
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Proejto.Util.dll
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Proejto.Util.pdb

@@ -1,0 +1,12 @@
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.BLL.dll
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.BLL.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.DAL.dll
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.Entidades.dll
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.Util.dll
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.Util.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.DAL.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\bin\Debug\Projeto.Entidades.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\obj\Debug\Projeto.BLL.csprojResolveAssemblyReference.cache
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\obj\Debug\Projeto.BLL.csproj.CoreCompileInputs.cache
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\obj\Debug\Projeto.BLL.dll
+D:\COTI informatica\GitHub 2\Projeto13\Projeto.BLL\obj\Debug\Projeto.BLL.pdb
