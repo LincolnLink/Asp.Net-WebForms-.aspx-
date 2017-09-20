@@ -12,16 +12,15 @@
     <!--Js-->
     <script src="../../Scripts/jquery-3.1.1.min.js"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
-    <!--
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>-->
+   
 </head>
 <body class="container">
     <form id="form1" runat="server">
         <div>
             <div class="well well-sm">
-            <h2>Sistema de Agenda</h2>
+                <h2>Sistema de Agenda</h2>
             </div>
+
             <div class="row">
                 <div class="col-md-3">
                     <strong>Usuario Altenticado</strong>
@@ -32,6 +31,7 @@
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
+
         </div>
     </form>
 </body>

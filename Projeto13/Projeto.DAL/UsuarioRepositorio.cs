@@ -12,13 +12,12 @@ namespace Projeto.DAL
     {
 
         #region Insert
-
         public void Insert(Usuario u)
         {
             OpenConnection();
 
-            string query = "INSERT INTO Usuario(Nome, Login, Senha, Foto, DataCadastro)" +
-                "VALUES(@Nome, @Login, @Senha, @Foto, GetDate())";
+            string query = " INSERT INTO Usuario(Nome, Login, Senha, Foto, DataCadastro) " +
+                " VALUES(@Nome, @Login, @Senha, @Foto, GetDate()) ";
 
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@Nome", u.Nome);
@@ -32,13 +31,12 @@ namespace Projeto.DAL
         #endregion
 
         #region Buscar Usuario - Login e senha
-
         public Usuario Find(string Login, string Senha)
         {
             OpenConnection();
 
-            string query = "SELECT * FROM Usuario " +
-                "where Login = @Login and Senha = @Senha";
+            string query = " SELECT * FROM Usuario " +
+                " where Login = @Login and Senha = @Senha ";
 
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@Login", Login);
@@ -63,13 +61,12 @@ namespace Projeto.DAL
         #endregion
 
         #region pesquisa se existe por login
-
         public bool HasUsuario(string Login)
         {
             OpenConnection();
 
-            string query = "SELECT Count(*) FROM Usuario " +
-                "where Login = @Login";
+            string query = " SELECT Count(*) FROM Usuario " +
+                " where Login = @Login ";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@Login", Login);
             int count = Convert.ToInt32(cmd.ExecuteScalar());

@@ -58,13 +58,13 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.Label lblErroSenha;
         
         /// <summary>
-        /// Controle btnAcesso.
+        /// Controle BtnAcesso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAcesso;
+        protected global::System.Web.UI.WebControls.Button BtnAcesso;
         
         /// <summary>
         /// Controle lblMessagem.
@@ -85,6 +85,15 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.TextBox txtNome;
         
         /// <summary>
+        /// Controle RequiredNome.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredNome;
+        
+        /// <summary>
         /// Controle txtLoginAcesso.
         /// </summary>
         /// <remarks>
@@ -92,6 +101,24 @@ namespace Proejto.WEB {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLoginAcesso;
+        
+        /// <summary>
+        /// Controle requiredLoginAcesso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredLoginAcesso;
+        
+        /// <summary>
+        /// Controle regexLogin.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexLogin;
         
         /// <summary>
         /// Controle txtSenhaAcesso.
@@ -103,6 +130,24 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.TextBox txtSenhaAcesso;
         
         /// <summary>
+        /// Controle requiredSenhaAcesso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredSenhaAcesso;
+        
+        /// <summary>
+        /// Controle regexSenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexSenha;
+        
+        /// <summary>
         /// Controle txtSenhaConfirm.
         /// </summary>
         /// <remarks>
@@ -112,6 +157,24 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.TextBox txtSenhaConfirm;
         
         /// <summary>
+        /// Controle requiredSenhaConfirm.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredSenhaConfirm;
+        
+        /// <summary>
+        /// Controle compareSenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator compareSenha;
+        
+        /// <summary>
         /// Controle txtFoto.
         /// </summary>
         /// <remarks>
@@ -119,6 +182,15 @@ namespace Proejto.WEB {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload txtFoto;
+        
+        /// <summary>
+        /// Controle requiredFoto.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredFoto;
         
         /// <summary>
         /// Controle BtnCadastro.

@@ -1,6 +1,8 @@
 D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\bin\Debug\Projeto.Util.dll
 D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\bin\Debug\Projeto.Util.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\bin\Debug\Projeto.Entidades.dll
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\bin\Debug\Projeto.Entidades.pdb
+D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Projeto.Util.csprojResolveAssemblyReference.cache
 D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Projeto.Util.csproj.CoreCompileInputs.cache
 D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Projeto.Util.dll
 D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Projeto.Util.pdb
-D:\COTI informatica\GitHub 2\Projeto13\Proejto.Util\obj\Debug\Projeto.Util.csprojResolveAssemblyReference.cache

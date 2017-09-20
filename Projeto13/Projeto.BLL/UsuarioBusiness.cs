@@ -15,13 +15,14 @@ namespace Projeto.BLL
     public class UsuarioBusiness
     {
 
+        #region CadastrarUsuario
         public void Cadastrar(Usuario u)
         {
             UsuarioRepositorio rep = new UsuarioRepositorio();
-            
+
             //verifica se o login do usuario existe no banco de dados
-            if ( ! rep.HasUsuario(u.Login))
-            {   //se não existir
+            if (!rep.HasUsuario(u.Login))
+            {   //se não existir no banco de dados.
                 //encriptar a senha do usuario..
                 Criptografia c = new Criptografia();
                 u.Senha = c.EncriptarSenha(u.Senha);
@@ -33,14 +34,20 @@ namespace Projeto.BLL
                 throw new LoginJaExisteException();
             }
         }
+        #endregion
 
+
+
+        #region AutenticarUsuario
         public Usuario Autenticar(string Login, string Senha)
         {
             UsuarioRepositorio rep = new UsuarioRepositorio();
 
-            Usuario u = rep.Find(Login, Senha);
+            Criptografia c = new Criptografia();
+            //Busca o usuario do banco de dados
+            Usuario u = rep.Find(Login, c.EncriptarSenha(Senha));
 
-            if ( u != null)
+            if (u != null)
             {
                 return u;
             }
@@ -49,5 +56,7 @@ namespace Projeto.BLL
                 throw new LoginJaExisteException();
             }
         }
+        #endregion
+
     }
 }

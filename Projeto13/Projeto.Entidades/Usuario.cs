@@ -16,6 +16,7 @@ namespace Projeto.Entidades
         private string foto;
         private DateTime dataCadastro;
 
+        //Métodos construtores
         public Usuario()
         {
 

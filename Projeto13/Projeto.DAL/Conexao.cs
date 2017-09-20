@@ -18,7 +18,7 @@ namespace Projeto.DAL
         protected void OpenConnection()
         {
             
-            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\App_Data\Banco.mdf;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\COTI informatica\GitHub 2\Projeto13\Proejto.WEB\App_Data\BancoCasa.mdf;Integrated Security=True");
             con.Open();
         }
         protected void CloseConnection()

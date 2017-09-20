@@ -43,5 +43,11 @@
     <Compile Include="Criptografia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto.Entidades\Projeto.Entidades.csproj">
+      <Project>{b45c4e2f-5694-44d4-8f21-e97d0e0a82c4}</Project>
+      <Name>Projeto.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
