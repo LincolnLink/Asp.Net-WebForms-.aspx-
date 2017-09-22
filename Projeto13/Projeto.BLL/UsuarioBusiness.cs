@@ -53,7 +53,7 @@ namespace Projeto.BLL
             }
             else
             {
-                throw new LoginJaExisteException();
+                throw new AcessoNegadoException();
             }
         }
         #endregion

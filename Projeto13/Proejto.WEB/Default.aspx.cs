@@ -8,6 +8,7 @@ using System.IO;
 using Projeto.Entidades;
 using Projeto.BLL;
 using System.Drawing; //paleta de desenho
+using System.Web.Security;
 
 
 namespace Proejto.WEB
@@ -21,7 +22,6 @@ namespace Proejto.WEB
 
         protected void BtnCadastro_Click(object sender, EventArgs e)
         {
-
             try
             {
                 if(ValidarUpload())
@@ -30,8 +30,8 @@ namespace Proejto.WEB
                     Usuario u = new Usuario();
 
                     u.Nome = txtNome.Text;
-                    u.Login = txtLoginAcesso.Text;
-                    u.Senha = txtSenhaAcesso.Text;
+                    u.Login = txtLoginCadastro.Text;
+                    u.Senha = txtSenhaCadastro.Text;
 
                     string nomeArquivo = Guid.NewGuid().ToString()
                         + Path.GetExtension(txtFoto.FileName);
@@ -56,7 +56,7 @@ namespace Proejto.WEB
 
                     //limpar os campos...
                     txtNome.Text = string.Empty;
-                    txtLoginAcesso.Text = string.Empty;
+                    txtLoginCadastro.Text = string.Empty;
                 }
             }
             catch (Exception ex)
@@ -98,9 +98,36 @@ namespace Proejto.WEB
 
         }
 
+        //Evento do botão login
         protected void BtnAcesso_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //Instanciar a classe de regra de negocio
+                UsuarioBusiness business = new UsuarioBusiness();
 
+                //Buscar o Usuario pelo Login e Senha
+                Usuario u = business.Autenticar(txtLoginAcesso.Text, txtSenhaAcesso.Text);
+
+                //Criando o ticket de acesso do usuario..
+                FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(u.Login, false, 5);
+
+                //Gravar o ticket em cookie
+                HttpCookie cookie = new HttpCookie(
+                    FormsAuthentication.FormsCookieName,
+                    FormsAuthentication.Encrypt(ticket));
+
+                Response.Cookies.Add(cookie); //cookie está gravado!
+
+                //redirecionar para a área restrita..
+                Response.Redirect("/AreaRestrita/Home.aspx");
+            }
+            catch (Exception ex)
+            {
+                //exibir mensagem de erro
+                lblMessagem.Text = ex.Message;
+                lblMessagem.ForeColor = Color.Red;
+            }
         }
     }
 }

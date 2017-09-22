@@ -22,13 +22,13 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle txtLogin.
+        /// Controle txtLoginAcesso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLogin;
+        protected global::System.Web.UI.WebControls.TextBox txtLoginAcesso;
         
         /// <summary>
         /// Controle lblErroLogin.
@@ -40,13 +40,13 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.Label lblErroLogin;
         
         /// <summary>
-        /// Controle txtSenha.
+        /// Controle txtSenhaAcesso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+        protected global::System.Web.UI.WebControls.TextBox txtSenhaAcesso;
         
         /// <summary>
         /// Controle lblErroSenha.
@@ -94,22 +94,31 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredNome;
         
         /// <summary>
-        /// Controle txtLoginAcesso.
+        /// Controle regexNome.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLoginAcesso;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexNome;
         
         /// <summary>
-        /// Controle requiredLoginAcesso.
+        /// Controle txtLoginCadastro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredLoginAcesso;
+        protected global::System.Web.UI.WebControls.TextBox txtLoginCadastro;
+        
+        /// <summary>
+        /// Controle requiredLoginCadastro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredLoginCadastro;
         
         /// <summary>
         /// Controle regexLogin.
@@ -121,22 +130,22 @@ namespace Proejto.WEB {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regexLogin;
         
         /// <summary>
-        /// Controle txtSenhaAcesso.
+        /// Controle txtSenhaCadastro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenhaAcesso;
+        protected global::System.Web.UI.WebControls.TextBox txtSenhaCadastro;
         
         /// <summary>
-        /// Controle requiredSenhaAcesso.
+        /// Controle requiredSenhaCadastro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredSenhaAcesso;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredSenhaCadastro;
         
         /// <summary>
         /// Controle regexSenha.

@@ -25,13 +25,12 @@
                     <hr />
 
                     <label>Login de Acesso: </label>
-                    <asp:TextBox runat="server" ID="txtLogin" CssClass="form-control" />
+                    <asp:TextBox runat="server" ID="txtLoginAcesso" CssClass="form-control" />
                     <asp:Label runat="server" ID="lblErroLogin" CssClass="label label-danger" />
                     <br />
 
                     <label>Senha de Acesso: </label>
-                    <asp:TextBox runat="server" ID="txtSenha" CssClass="form-control"
-                        TextMode="Password"/>
+                    <asp:TextBox runat="server" ID="txtSenhaAcesso" CssClass="form-control" TextMode="Password"/>
                     <asp:Label runat="server" ID="lblErroSenha" CssClass=" label label-danger" />
                     <br />
                 </div>
@@ -43,8 +42,8 @@
                     <a href="#" data-target="#janela" data-toggle="modal">
                         Cadastre-se aqui
                     </a>
-                     <br />
-                        <asp:label runat="server" id="lblMessagem" />
+                    <br />
+                    <asp:label runat="server" id="lblMessagem" />
                 </div>
             </div>
         
@@ -69,26 +68,27 @@
                                     Display="Dynamic"
                                     ValidationGroup="formularioCadastro" 
                                 />
-                                <asp:RegularExpressionValidator
-                                    ID="regexNome"
+                                <asp:RegularExpressionValidator 
+                                    Id="regexNome"
                                     runat="server"
                                     ControlToValidate="txtNome"
                                     ErrorMessage="Somente letras, de 6 a 50 caracteres."
-                                    ForeColor="Red"Display="Dynamic"
+                                    ForeColor="Red"
+                                    Display="Dynamic"
                                     ValidationGroup="formularioCadastro"
                                     ValidationExpression="^[A-Za-zÀ-Üà-ü\s]{6,50}$"
-                                />
+                                />                                
                             </div>                        
                             <br />
 
                             <div class="col-md-12">                               
                                 <label>Login de Acesso: </label>
-                                <asp:TextBox runat="server" ID="txtLoginAcesso" 
+                                <asp:TextBox runat="server" ID="txtLoginCadastro" 
                                     CssClass="form-control" />
                                 <asp:RequiredFieldValidator
-                                    ID="requiredLoginAcesso"
+                                    ID="requiredLoginCadastro"
                                     runat="server"
-                                    ControlToValidate="txtLoginAcesso"
+                                    ControlToValidate="txtLoginCadastro"
                                     ErrorMessage="Por favor, informe o login so usuário"
                                     ForeColor="Red"
                                     Display="Dynamic"
@@ -97,29 +97,30 @@
                                 <asp:RegularExpressionValidator
                                     ID="regexLogin"
                                     runat="server"
-                                    ControlToValidate="txtNome"
+                                    ControlToValidate="txtLoginCadastro"
                                     ErrorMessage="Somente letras minúsculas ou numéros,
                                     de 6 a 20 caracteres."
                                     ForeColor="Red"
                                     Display="Dynamic"
                                     ValidationGroup="formularioCadastro"
-                                    ValidationExpression="^[a-z0-9]{6,20}$" />
-
+                                    ValidationExpression="^[a-z0-9]{6,20}$" 
+                                />
                             </div>
                             <br />
 
                             <div class="col-md-6">                              
                                 <label>Senha de Acesso: </label>
-                                <asp:TextBox runat="server" ID="txtSenhaAcesso"
-                                    CssClass=" form-control" TextModel="password"/>
+                                <asp:TextBox runat="server" ID="txtSenhaCadastro"
+                                    CssClass=" form-control" TextMode="Password"/>
                                 <asp:RequiredFieldValidator 
-                                    ID="requiredSenhaAcesso"
+                                    ID="requiredSenhaCadastro"
                                     runat="server"
-                                    ControlToValidade="txtSenhaAcesso"
+                                    ControlToValidate="txtSenhaCadastro"                                    
                                     ErrorMessage="Por favor, informe a senha do usuário"
                                     ForeColor="Red"
                                     Display="Dynamic"
-                                    ValidationGroup="formularioCadastro"/>
+                                    ValidationGroup="formularioCadastro"
+                                />
                                 <asp:RegularExpressionValidator
                                     ID="regexSenha"
                                     runat="server"                               
@@ -127,19 +128,18 @@
                                 conter no minimo 5 e no máximo 25 digitos, sendo no minimo uma letra minuscula,
                                 uma letra maiuscula, um número e um caracter especial (#*.@)."
                                     Display="Dynamic"
-                                    ControlToValidate="txtSenhaAcesso"
-                                    ValidationExpression="^.*(?=.{5,25})(?=.*\d)(?=.*[a-z])(?=.*[AZ])(?=.*[@#$%^&+=]).*$"
+                                    ControlToValidate="txtSenhaCadastro"
+                                    ValidationExpression="^.*(?=.{5,25})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$"
                                     ForeColor="Red"
                                     ValidationGroup="formularioCadastro"
                                  />
-
                             </div>
                             <br />
 
                             <div class="col-md-6">                             
                                 <label>Confirme a sua Senha</label>
                                 <asp:TextBox runat="server" ID="txtSenhaConfirm"
-                                    CssClass="form-control" TextModel="password"/>
+                                    CssClass="form-control" TextMode="Password"/>
                                 <asp:RequiredFieldValidator
                                     ID="requiredSenhaConfirm"
                                     runat="server"
@@ -147,17 +147,18 @@
                                     ErrorMessage="Por favor, confirme a senha do usuário"
                                     ForeColor="Red"
                                     Display="Dynamic"
-                                    ValidationGroup="formularioCadastro" />
+                                    ValidationGroup="formularioCadastro"
+                                />
                                 <asp:CompareValidator
-                                     ID="compareSenha"
+                                    ID="compareSenha"
                                     runat="server"
                                     ControlToValidate="txtSenhaConfirm"
-                                    ControlToCompare="txtSenhaAcesso"
+                                    ControlToCompare="txtSenhaCadastro"
                                     ErrorMessage="Senhas não conferem"
                                      ForeColor="Red"
                                     Display="Dynamic"
-                                    ValidationGroup="formularioCadastro"
-                                     />
+                                    ValidationGroup="formularioCadastro" 
+                                />
                             </div>
                             <br />
 
@@ -172,7 +173,8 @@
                                     ErrorMessage="Por favor, envie a foto do usuário"
                                     ForeColor="Red"
                                     Display="Dynamic"
-                                    ValidationGroup="formularioCadastro" />
+                                    ValidationGroup="formularioCadastro"
+                                />
                             </div>
                         </div>
                     </div>
