@@ -15,6 +15,7 @@ namespace Projeto.Entidades
         private string senha;
         private string foto;
         private DateTime dataCadastro;
+        private List<Tarefa> tarefas; //Associação (TER-Muitos)
 
         //Métodos construtores
         public Usuario()
@@ -60,6 +61,11 @@ namespace Projeto.Entidades
         {
             set { dataCadastro = value; }
             get { return dataCadastro;  }
+        }
+        public List<Tarefa> Tarefas
+        {
+            set { tarefas = value; }
+            get { return tarefas; }
         }
 
         public override string ToString()

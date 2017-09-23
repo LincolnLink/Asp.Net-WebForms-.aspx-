@@ -20,6 +20,8 @@ namespace Proejto.WEB
 
         }
 
+
+        #region Botão Cadastrar 
         protected void BtnCadastro_Click(object sender, EventArgs e)
         {
             try
@@ -66,6 +68,10 @@ namespace Proejto.WEB
                 lblMessagem.ForeColor = Color.Red;
             }
         }
+        #endregion
+
+
+        #region Validar Cadastro
 
         private bool ValidarUpload()
         {
@@ -97,7 +103,11 @@ namespace Proejto.WEB
             return resultado;
 
         }
+        #endregion
 
+
+        #region Botão para entrar no sistema
+        
         //Evento do botão login
         protected void BtnAcesso_Click(object sender, EventArgs e)
         {
@@ -119,6 +129,9 @@ namespace Proejto.WEB
 
                 Response.Cookies.Add(cookie); //cookie está gravado!
 
+                //Gravando usuario na sessao
+                Session["usuario"] = u;
+
                 //redirecionar para a área restrita..
                 Response.Redirect("/AreaRestrita/Home.aspx");
             }
@@ -129,5 +142,7 @@ namespace Proejto.WEB
                 lblMessagem.ForeColor = Color.Red;
             }
         }
+
+        #endregion
     }
 }
