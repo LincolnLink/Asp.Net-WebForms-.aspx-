@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Projeto.Entidades;
-using Projeto.BLL.Exceptions.Tarefas;
 using Projeto.DAL;
+using Projeto.BLL.Exceptions.Tarefas;
+
 
 namespace Projeto.BLL
 {
@@ -30,7 +31,7 @@ namespace Projeto.BLL
             if (inicio < fim)
             {
                 TarefasRepositorio rep = new TarefasRepositorio();
-                return rep.Fild(inicio, fim, id);
+                return rep.Find(inicio, fim, id);
             }
             else
             {

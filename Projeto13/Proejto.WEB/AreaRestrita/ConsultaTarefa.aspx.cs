@@ -21,8 +21,7 @@ namespace Proejto.WEB.AreaRestrita
             try
             {
                 //recuperar o usuario de sessão
-                Usuario u = new Usuario();
-                u = (Usuario) Session["usuario"]; //casting
+                Usuario u = (Usuario) Session["usuario"]; //casting
 
                 //resgatar as datas informadas nos campos
                 DateTime dataIni = DateTime.Parse(txtDataIni.Text);
@@ -30,8 +29,7 @@ namespace Proejto.WEB.AreaRestrita
 
                 //executar a consulta..
                 TarefaBusiness business = new TarefaBusiness();
-                List<Tarefa> lista = new List<Tarefa>();
-                lista = business.Consultar(dataIni, dataFim, u.IdUsuario);
+                List<Tarefa> lista = business.Consultar(dataIni, dataFim, u.IdUsuario);
 
                 //popular o gridview
                 gridTarefas.DataSource = lista; //popular o grif

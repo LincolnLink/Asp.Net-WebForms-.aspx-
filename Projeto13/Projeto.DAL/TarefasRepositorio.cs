@@ -34,7 +34,7 @@ namespace Projeto.DAL
 
         #region ListandoTarefas
         
-        public List<Tarefa> Fild(DateTime dataIni, DateTime dataFim, int IdUsuario)
+        public List<Tarefa> Find(DateTime dataIni, DateTime dataFim, int IdUsuario)
         {
             OpenConnection();
 
@@ -57,8 +57,7 @@ namespace Projeto.DAL
                 t.IdTarefa = Convert.ToInt32(dr["IdTarefa"]);
                 t.NomeTarefa = Convert.ToString(dr["NomeTarefa"]);
                 t.DataHora = Convert.ToDateTime(dr["DataHora"]);
-                t.Descricao = Convert.ToString(dr["Descricao"]);
-                t.Usuario.IdUsuario = Convert.ToInt32(dr["IdUsuario"]);
+                t.Descricao = Convert.ToString(dr["Descricao"]);               
 
                 lista.Add(t);
             }
