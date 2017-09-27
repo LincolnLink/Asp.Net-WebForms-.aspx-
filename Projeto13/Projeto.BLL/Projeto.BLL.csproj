@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\Tarefas\DataHoraInvalidaException.cs" />
     <Compile Include="Exceptions\Usuario\AcessoNegadoException.cs" />
+    <Compile Include="TarefaBusiness.cs" />
     <Compile Include="UsuarioBusiness.cs" />
     <Compile Include="Exceptions\Usuario\LoginJaExisteException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
